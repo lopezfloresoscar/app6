@@ -1,11 +1,11 @@
 // JavaScript Document
 $(document).ready(function(e) {
     document.addEventListener('deviceready', function(){
-		$('#btnvibrar').on('tap', function(){
+		$('#btnvibrar').tap(function(){
 			navigator.notificacion.vibrate(5000);
 		});
-		$('#btnbeep').on('tap', function(){
-			navigator.notificacion.beep(5);
+		$('#btnsonar').tap(function(){
+			navigator.notificacion.beep(20);
 		});
 });
 });
